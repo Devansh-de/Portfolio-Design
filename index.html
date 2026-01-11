@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;D/&gt;</span>
+                <span class="logo-text">Devansh</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode"><i
+                                class="fas fa-moon"></i></button></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="greeting">Hello, I'm Devansh Bhatia,</span>
+                    <h1 class="hero-title">A Creative <span class="highlight">Developer</span></h1>
+                    <p class="hero-description">I build beautiful, responsive, and user-friendly websites that deliver
+                        exceptional digital experiences.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="blob">
+                        <img src="profile_avatar.png" alt="Devansh Bhatia" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Marquee -->
+        <div class="tech-marquee">
+            <div class="marquee-content">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fab fa-react"></i> React</span>
+                <span><i class="fab fa-linux"></i> Linux</span>
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span><i class="fab fa-git-alt"></i> Git</span>
+                <span><i class="fas fa-database"></i> SQL</span>
+                <span><i class="fas fa-network-wired"></i> Networking</span>
+                <span><i class="fas fa-shield-alt"></i> Security</span>
+                <span><i class="fas fa-terminal"></i> Bash</span>
+                <!-- Duplicate for seamless scrolling -->
+                <span><i class="fab fa-python"></i> Python</span>
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span><i class="fab fa-react"></i> React</span>
+                <span><i class="fab fa-linux"></i> Linux</span>
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span><i class="fab fa-git-alt"></i> Git</span>
+                <span><i class="fas fa-database"></i> SQL</span>
+                <span><i class="fas fa-network-wired"></i> Networking</span>
+                <span><i class="fas fa-shield-alt"></i> Security</span>
+                <span><i class="fas fa-terminal"></i> Bash</span>
+            </div>
+        </div>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a passionate web developer with a keen eye for design. I love transforming ideas into
+                            reality using code. With a strong foundation in HTML, CSS, and modern web technologies, I
+                            strive to create interfaces that are not only visually appealing but also accessible and
+                            performant.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open source,
+                            or enjoying a good cup of coffee.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Responsive Design</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-magic"></i>
+                        <h3>UI/UX Design</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cyber Security</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <!-- Placeholder for project image -->
+                            <div class="placeholder-img"
+                                style="background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Dashboard</h3>
+                            <p>A responsive dashboard interface with data visualization and order management features.
+                            </p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img"
+                                style="background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Travel Agency Site</h3>
+                            <p>A modern landing page for a travel agency featuring beautiful destinations and booking
+                                forms.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-img"
+                                style="background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);"></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Personal Blog</h3>
+                            <p>A clean and minimalist blog template focusing on typography and reading experience.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">Have a project in mind or just want to say hi? Feel free to send me a
+                    message.</p>
+
+                <div class="contact-wrapper">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! (Demo)');">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navList = document.querySelector('.nav-list');
+
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                navList.classList.remove('active'); // Close menu on click
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        // Check local storage
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+
+            if (body.classList.contains('light-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'light');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+
+</html>
