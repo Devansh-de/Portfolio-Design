@@ -31,8 +31,7 @@
                     <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode"><i
-                                class="fas fa-moon"></i></button></li>
+
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -164,9 +163,7 @@
                     <!-- Project 1 -->
                     <article class="project-card">
                         <div class="project-image">
-                            <!-- Placeholder for project image -->
-                            <div class="placeholder-img"
-                                style="background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);"></div>
+                            <img src="project_ecommerce.png" alt="E-Commerce Dashboard" class="project-img-full">
                         </div>
                         <div class="project-info">
                             <h3>E-Commerce Dashboard</h3>
@@ -184,9 +181,7 @@
                     <!-- Project 2 -->
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder-img"
-                                style="background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">
-                            </div>
+                            <img src="project_travel.png" alt="Travel Agency Site" class="project-img-full">
                         </div>
                         <div class="project-info">
                             <h3>Travel Agency Site</h3>
@@ -203,8 +198,7 @@
                     <!-- Project 3 -->
                     <article class="project-card">
                         <div class="project-image">
-                            <div class="placeholder-img"
-                                style="background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);"></div>
+                            <img src="project_blog.png" alt="Personal Blog" class="project-img-full">
                         </div>
                         <div class="project-info">
                             <h3>Personal Blog</h3>
@@ -275,31 +269,7 @@
             });
         });
 
-        // Theme Toggle Logic
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-        const icon = themeToggle.querySelector('i');
 
-        // Check local storage
-        if (localStorage.getItem('theme') === 'light') {
-            body.classList.add('light-mode');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-
-            if (body.classList.contains('light-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-                localStorage.setItem('theme', 'light');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
     </script>
 </body>
 
