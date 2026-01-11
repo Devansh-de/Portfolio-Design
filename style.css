@@ -675,13 +675,16 @@ img {
     .hero-visual {
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
-        /* Show blob on mobile */
+        margin-top: 0;
+        margin-bottom: 2rem;
+        order: -1;
+        /* Move to top */
     }
 
     .blob {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        /* Slightly smaller for better proportion at top */
+        height: 250px;
     }
 
     .about-content {
