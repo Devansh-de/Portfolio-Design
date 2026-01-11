@@ -673,8 +673,15 @@ img {
     }
 
     .hero-visual {
-        display: none;
-        /* Hide blob on mobile for space */
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        /* Show blob on mobile */
+    }
+
+    .blob {
+        width: 280px;
+        height: 280px;
     }
 
     .about-content {
